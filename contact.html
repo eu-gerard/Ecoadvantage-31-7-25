@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | EcoAdvantage Inc.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-900">
+  <section id="contact" class="py-20 bg-eco-light-gray">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Ready to Transform Your Property? Let's Talk!
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
+          <strong>Limited availability</strong> – We only take on a select number of projects each month to ensure exceptional quality.
+        </p>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+          Get your free consultation today and discover how much you could save with professional cleaning that extends the life of your carpets, protects your surfaces, and enhances your property value.
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Request Your Free Estimate</h3>
+        <form action="https://formsubmit.co/kevin@ecoadvantageinc.com" method="POST" class="space-y-6">
+          <input type="hidden" name="_subject" value="New Message from Website!" />
+          <input type="hidden" name="_next" value="https://ecoadvantageinc.com/thank-you.html" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name" class="w-full border-gray-300 rounded-md shadow-sm p-2" />
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567" class="w-full border-gray-300 rounded-md shadow-sm p-2" />
+            </div>
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com" class="w-full border-gray-300 rounded-md shadow-sm p-2" />
+          </div>
+
+          <div>
+            <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service Needed *</label>
+            <select id="service" name="service" required class="w-full border-gray-300 rounded-md shadow-sm p-2">
+              <option value="" disabled selected>Choose Your Service</option>
+              <option>Commercial & Residential Window Cleaning</option>
+              <option>Commercial Carpet Cleaning</option>
+              <option>Commercial Power Washing</option>
+              <option>Commercial Floor Care</option>
+              <option>Tile and Grout Restoration</option>
+              <option>Pharmacy Compound Lab Cleaning</option>
+              <option>Business Training & Consulting</option>
+              <option>Multiple Services</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Project Details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your cleaning needs, property size, specific requirements, etc." class="w-full border-gray-300 rounded-md shadow-sm p-2"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-red-600 text-white font-bold py-3 rounded-md shadow hover:bg-red-700 transition-all">
+            Book A Free Consultation Now
+          </button>
+
+          <p class="text-sm text-gray-600 text-center mt-4">
+            Your information is secure and will never be shared.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
